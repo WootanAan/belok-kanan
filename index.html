@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Balik Kanan Grak</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<script type="text/javascript" src="js.js"></script>
+</head>
+<body>
+	<div id="game">
+		<div id="canvas">
+			<img src="img/coin.svg" id="makanan">
+			<img src="img/silver.svg" id="racun">
+			<div id="belakang"></div>
+			<div id="tengah"></div>
+			<img src="img/kendaraan.svg" id="depan">
+			<div id="skor">0</div>
+		</div>
+		<div id="tombol" onclick="kemana()"></div>
+		<div id="kalah" onclick="sudah()">ok</div>
+	</div>
+	<div id="pembukaan">
+		<h1 id="nama-game">belok kanan</h1>
+		<p  id="skorTertinggi">Skor Tertinggi: <span  id="skorTertinggiNilai">0</span></p>
+		<img id="tombol-main" onclick="mulai()" src="img/play.svg">
+	</div>
+</body>
+</html>

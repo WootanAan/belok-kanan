@@ -1,0 +1,134 @@
+* {
+	margin: 0;
+	position: absolute;
+}
+
+body {
+	height: 100vh;
+	width: 100vw;
+	background-color: #2B4764;
+}
+
+#tombol {
+	background-color: blue;
+	width: 100vw;
+	height: 90vh;
+	opacity: 0;
+	top: 0;
+}
+
+#game {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-wrap: wrap;
+	opacity: 0;
+}
+
+#canvas {
+	top: 0;
+	height: 90vmin;
+	width: 90vmin;
+	border: 5vmin solid;
+	border-color: #FFDB1A #E8C400 #9A8200 #C9AA00;
+	background-color: #070600;
+	overflow: hidden;
+	position: relative;
+	margin: auto;
+}
+
+#belakang {
+	background-color: #121DFF;
+	width: 3vmin;
+	height: 3vmin;
+	border: 3.5vmin solid #9CA0FF;
+	opacity: 0.2;
+}
+
+#tengah {
+	background-color: #121DFF;
+	width: 6vmin;
+	height: 6vmin;
+	border: 2vmin solid #9CA0FF;
+	opacity: 0.5;
+}
+
+#depan {
+	width: 10vmin;
+	height: 10vmin;
+	left: 20vmin;
+	transform: rotate(90deg);
+}
+
+#skor {
+	position: relative;
+	text-align: center;
+	color: #fff;
+	font-size: 5vmin;
+}
+
+#makanan, #racun {
+	height: 6vmin;
+	width: 6vmin;
+}
+
+#pembukaan {
+	width: 90vw;
+	height: 90vh;
+	padding: 20px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+#nama-game {
+	color: gold;
+	font-size: 50px;
+	text-align: center;
+	margin: 100px auto;
+	position: relative;
+}
+
+#skorTertinggi {
+	color: silver;
+	font-size: 30px;
+	text-align: center;
+	margin: auto;
+	position: relative;
+	font-family: monospace;
+}
+
+#tombol-main {
+	height: 200px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-20%);
+	border-radius: 50%;
+}
+
+#tombol-main:active {
+	box-shadow: 0 0 2vmin #fff;
+}
+
+#kalah {
+	width: 100px;
+	background-color: gold;
+	box-shadow: 0 0 20vmin #fff;
+	border-radius: 20px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-20%);
+	text-align: center;
+	padding: 20px;
+	display: none;
+}
+
+#kalah:active {
+	width: 50px;
+}
+
+@media (max-width: 600px) {
+	body, #game {
+		height: 90vh;
+	}
+}
