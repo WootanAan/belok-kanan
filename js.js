@@ -109,8 +109,8 @@ function putarMusik() {
 }
 
 function sudah() {
-	document.getElementById('pembukaan').style = "display: block;"
 	document.getElementById('game').style = "opacity: 0;"
 	if (skor > skorTertinggi) {skorTertinggi = skor}
+	document.getElementById('pembukaan').style = "display: block;"
 	document.getElementById('skorTertinggiNilai').innerHTML = skorTertinggi
 }
