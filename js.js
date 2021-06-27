@@ -15,8 +15,8 @@ function mulai() {
 	posisi = [[0,-30],[0,-20],[0,-10]]
 	jalan()
 	document.getElementById('pembukaan').style = "display: none;"
-	document.getElementById('kalah').style = "display: none;"
 	document.getElementById('game').style = "opacity: 1;"
+	document.getElementById('skor').innerHTML = skor
 	document.addEventListener("keydown", keybord)
 }
 
@@ -42,7 +42,7 @@ function jalan() {
 function cek() {
 	if (posisi[2][1] == 90 || posisi[2][0] == 90 || posisi[2][1] == -10 || posisi[2][0] == -10) {
 		new Audio("araara.mp3").play();
-		document.getElementById('kalah').style = "display: block;"
+		setTimeout(sudah, 200)
 	} else {
 		if ((posisiMakanan[0] * 10) == posisi[2][0] && (posisiMakanan[1] * 10) == posisi[2][1]) {
 			skor += 1
